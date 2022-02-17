@@ -1,0 +1,6 @@
+.pre-title {
+  margin-bottom: 50px;
+  @include font(36px, 700, 42px, 0.03em);
+  color: var(--tittle-text-color);
+  text-align: center;
+}

@@ -23,7 +23,7 @@
   margin-bottom: 30px;
 }
 
-&__button:hover,
-&__button:focus {
+.hero__button:hover,
+.hero__button:focus {
   background-color: var(--secondary-accent-color);
 }

@@ -15,6 +15,10 @@ section {
   padding-bottom: 94px;
 }
 
+address {
+  font-style: normal;
+}
+
 h1,
 h2,
 h3,
@@ -734,8 +738,7 @@ button {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filters-list__button:hover,
-.filters-list__button:focus {
+.filters-list__button:hover, .filters-list__button:focus {
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
   box-shadow: var(--btn-hover-shadow);
@@ -764,8 +767,7 @@ button {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card-set__link:hover,
-.card-set__link:focus {
+.card-set__link:hover, .card-set__link:focus {
   box-shadow: var(--card-set-hover-shadow);
   border: 0;
 }

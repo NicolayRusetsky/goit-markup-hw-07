@@ -76,11 +76,11 @@
   color: var(--primary-bg-color);
   text-decoration: none;
   background-color: var(--overlay-bg-color);
-}
 
-.card-set__link:hover .card-wrap__text,
-.card-set__link:focus .card-wrap__text {
-  transform: translateY(0);
+  .card-set__link:hover &,
+  .card-set__link:focus & {
+    transform: translateY(0);
+  }
 }
 
 .card-cont {

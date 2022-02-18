@@ -3,13 +3,13 @@
   justify-content: center;
 }
 
-.socials-list__item:not(:first-child) {
-  margin-left: 10px;
-}
-
 .socials-list__item {
   width: 44px;
   height: 44px;
+
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
 }
 
 .socials-list__link {

@@ -10,6 +10,27 @@
 
   transform: translate(-50%, -50%) rotate(0) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .backdrop.is-hidden & {
+    transform: rotate(-180deg) scale(0.3);
+  }
+
+  .backdrop {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    background-color: var(--backdrop-bg-color);
+  }
+
+  .is-hidden & {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
 }
 
 .modal__button-close {
@@ -46,14 +67,14 @@
 
 .modal-form__field {
   margin-bottom: 10px;
-}
 
-.modal-form__field-text {
-  margin-bottom: 25px;
-}
+  &-text {
+    margin-bottom: 25px;
+  }
 
-.modal-form__field-checkbox {
-  margin-bottom: 30px;
+  &-checkbox {
+    margin-bottom: 30px;
+  }
 }
 
 .modal-form__input {
@@ -65,14 +86,14 @@
   padding-left: 42px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal-form__input:focus {
-  border-color: var(--accent-color);
-}
+  &:focus {
+    border-color: var(--accent-color);
+  }
 
-.modal-form__input:focus + .modal-form__icon {
-  fill: var(--accent-color);
+  &:focus + .modal-form__icon {
+    fill: var(--accent-color);
+  }
 }
 
 .modal-form__wrap {
@@ -103,10 +124,10 @@
   resize: none;
   outline: none;
   display: block;
-}
 
-.modal-form__text::placeholder {
-  color: rgba(117, 117, 117, 0.5);
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .modal-form__label-checkbox {
@@ -119,17 +140,17 @@
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal-form__label-checkbox span {
-  width: 16px;
-  height: 15px;
-  border: 2px solid var(--tittle-text-color);
-  border-radius: 2px;
-  margin-right: 8.38px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  & > span {
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--tittle-text-color);
+    border-radius: 2px;
+    margin-right: 8.38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .modal-form__checkbox:checked + .modal-form__label-checkbox > span {

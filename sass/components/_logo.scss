@@ -2,14 +2,14 @@
   color: var(--accent-color);
   font-family: 'Raleway', sans-serif;
   @include font(26px, 700, 31px, 0.03em);
-  display: inline-block;
 }
 
-.logo--black {
+.logo__black {
   color: var(--tittle-text-color);
 }
 
-.logo--white {
+.logo__white {
+  display: inline-block;
   color: var(--primary-bg-color);
   margin-bottom: 20px;
 }

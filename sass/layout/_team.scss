@@ -1,13 +1,5 @@
-.team-section {
-  background-color: var(--secondary-bg-color);
-}
-
 .team {
   display: flex;
-}
-
-.team__item:not(:first-child) {
-  margin-left: 30px;
 }
 
 .team__item {
@@ -15,6 +7,10 @@
   box-shadow: var(--card-shadow);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
+
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
 }
 
 .team__container {

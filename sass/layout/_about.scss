@@ -8,6 +8,10 @@
 
 .about__item {
   position: relative;
+
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
 }
 
 .about__container {
@@ -28,8 +32,4 @@
   @include font(14px, 700, 16px, 0.03em);
   text-align: center;
   color: var(--primary-bg-color);
-}
-
-.about__item:not(:first-child) {
-  margin-left: 30px;
 }
